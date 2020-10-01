@@ -1,0 +1,8 @@
+FROM <imagem base>:<tag>
+
+WORKDIR <caminho que servirá de raiz>
+COPY <arquivos a serem copiados do seu computador> <caminho de destino dentro do container>
+RUN <comandos a serem executados>
+
+ENTRYPOINT <comando a ser executado quando o container iniciar, não pode ser alterado>
+CMD <comando a ser executado quando o container iniciar, pode ser alterado>
